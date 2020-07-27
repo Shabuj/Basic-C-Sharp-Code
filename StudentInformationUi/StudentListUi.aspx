@@ -1,0 +1,108 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StudentListUi.aspx.cs" Inherits="StudentInformationUi.StudentListUi" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 300px;
+        }
+        .auto-style2 {
+            width: 323px;
+        }
+    </style>
+</head>
+<body>
+   <form id="form1" runat="server">
+        <div>
+           
+            <table style="width: 100%; height: 95px;">
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2"><strong>Student Information Management</strong></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">First Name</td>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="firstName" runat="server" Height="16px" Width="324px"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">Last Name</td>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="lastName" runat="server" Height="16px" Width="324px"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">User Name</td>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="userName" runat="server" Height="16px" Width="324px"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">Reg. No.</td>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="regNo" runat="server" Height="16px" Width="324px"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">Email</td>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="email" runat="server" Height="16px" Width="324px"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">Age</td>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="age" runat="server" Height="16px" Width="324px"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Button ID="saveButton" runat="server" Text="Save" Width="57px" OnClick="saveButton_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="showButton" runat="server" Text="Show" OnClick="showButton_Click" />
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Label ID="message" runat="server" ></asp:Label>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:ListBox ID="nameList" runat="server" Height="114px" Width="333px"></asp:ListBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+           
+        </div>
+    </form>
+</body>
+</html>
